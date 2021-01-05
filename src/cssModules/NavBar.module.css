@@ -1,0 +1,93 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+}
+
+.navLinkMini {
+    z-index: 250;
+    width: 50%;
+    height:10%;
+    display: block;
+    margin-top: 25px;
+    margin-left: 7px;
+    padding: 1px;
+    align-items: center;
+    color: gold;
+    cursor: pointer;
+    
+}
+
+.navLinkIcon {
+    z-index: 250;
+    width: 10%;
+    height: 55%;
+    margin: 0;
+    display: inline-block;
+    padding-left: 10%;
+    color: gold;
+    cursor: pointer;
+    
+}
+
+.navLinkText{
+    height: 30%;
+    z-index: 250;
+    display: inline-block;
+    margin: 0;
+    padding-left: 10%;
+    color:gold;
+}
+
+.navLinkTitle{
+    height: 30%;
+    z-index: 250;
+    display: inline-block;
+    margin: 0;
+    padding-left: 10%;
+    color:gold;
+    font-family: 'Monoton', cursive;
+    font-size: 1.25rem;
+}
+
+
+.navLink {
+    z-index: 250;
+    width: 100%;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navLink:hover{
+    background-color: #660066;
+    border-radius: 1px;
+}
+
+
+.navLink:active .navLinkText {
+    font-weight: bold;
+}
+
+
+.navLinkMini:hover{
+    background-color: #660066;
+    border-radius: 2px;
+}
+
+.retractBar {
+    animation-name: retractAnimation;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes retractAnimation {
+    0% {width: 5%;}
+    25% {width: 9%;}
+    50% {width: 11%;}
+    75% {width: 13%}
+    100% {width: 15%;}
+} 

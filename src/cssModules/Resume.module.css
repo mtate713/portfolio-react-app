@@ -1,0 +1,8 @@
+.downloadLink {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #660066;
+    color: gold;
+    box-shadow: 0 0 10px white;
+}

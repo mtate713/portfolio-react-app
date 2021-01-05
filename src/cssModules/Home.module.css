@@ -1,0 +1,55 @@
+.recordImage {
+    flex-grow: 2;
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    padding: 0;
+    box-shadow: 0 0 10px white;
+    animation-name: spinAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.recordImageSpinOff {
+    flex-grow: 2;
+    height: 400px;
+    width: 400px;
+}
+.recordImageContainer {
+    padding-top: 25px;
+}
+
+.recordImageContainer:hover{
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    width: 95%;
+}
+
+.text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #660066;
+    border-radius: 20px;
+    text-align: center;
+    width: 20%;
+    flex-grow: 1;
+    box-shadow: 0 0 10px white;
+    text-shadow: 0 0 10px white;
+}
+
+@keyframes spinAnimation {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}

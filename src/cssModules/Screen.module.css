@@ -1,0 +1,42 @@
+.pageContainer  {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25px;
+    color: gold;
+    padding-bottom: 20px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../lib/img/blackspace.jpg');
+    clear: left;
+    z-index: 0;
+    border-radius: 20px;
+    border: solid white 1px;
+    box-shadow: 0 0 10px gold;
+    animation-name: pageAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    overflow: auto;
+}
+
+.pageTitle { 
+    margin: 0;
+    color: gold;
+    height: 20px;
+    width: 90%;
+    padding: 10px;
+    padding-top: 30px;
+    text-shadow: 2px 2px 1px white;
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+
+}
+
+
+@keyframes pageAnimation {
+    0% {top: 9999px; opacity: 0.1;}
+    100% {top: 0px; opacity: 1;}
+}
+
